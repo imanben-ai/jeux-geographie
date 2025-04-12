@@ -20,7 +20,7 @@ const boutonSuivant = document.getElementById('next-btn');
 let tousLesPays = null;
 
 // Chargement des pays
-fetch('./data/countries.geo.json')
+fetch('data/countries.geo.json')
     .then(reponse => {
         if (!reponse.ok) throw new Error('Échec du chargement des pays');
         return reponse.json();
