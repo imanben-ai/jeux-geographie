@@ -1,0 +1,26 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Country Guesser</title>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/leaflet.css">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+ </head>
+ <body>
+     <div id="game-container">
+         <div id="map"></div>
+         <div id="game-ui">
+             <div id="score">Score: 0</div>
+             <div id="country-name">Find: <span id="target-country"></span></div>
+             <button id="hint">Hint <span id="hint-count">3</span></button>
+             <div id="message"></div>
+             <button id="next-btn" style="display: none;">Suivant</button>
+         </div>
+     </div>
+     <script src="javascript/leaflet.js"></script>
+     <script src="javascript/script.js"></script>
+ </body>
+ </html>
